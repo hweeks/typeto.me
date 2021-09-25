@@ -3,6 +3,7 @@ import { Provider } from "react-redux";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import styled from "styled-components";
 import { ConnectToRoom } from "./components/ConnectToRoom";
+import Room from "./components/Room";
 import { store } from "./state";
 
 const Title = styled.h1`
@@ -16,6 +17,7 @@ export const AppRoot = () => (
       <Switch>
         <Route path="/">
           <ConnectToRoom />
+          <Room />
         </Route>
       </Switch>
     </Router>
