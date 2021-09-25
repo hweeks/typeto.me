@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { Socket } from "socket.io-client"
+import { SOCKET_EVENTS } from "@typeto.me/backend"
 
 function Messages({ socket }: { socket: Socket }) {
   const [messages, set_messages] = useState([""])
@@ -8,9 +9,9 @@ function Messages({ socket }: { socket: Socket }) {
     const set_messages_internal = (single_message) => {
       set_messages((prev) => [single_message, ...prev])
     }
-    socket.on("newline", set_messages_internal)
+    socket.on(SOCKET_EVENTS.INPUT, set_messages_internal)
     return () => {
-      socket.off("newline", set_messages_internal)
+      socket.off(SOCKET_EVENTS.INPUT, set_messages_internal)
     }
   }, [socket])
 
@@ -22,7 +23,7 @@ function Messages({ socket }: { socket: Socket }) {
         onClick={(e) => {
           e.preventDefault()
           e.stopPropagation()
-          socket.emit("newline", Date.now())
+          socket.emit(SOCKET_EVENTS.INPUT, Date.now())
         }}
       >
         click me

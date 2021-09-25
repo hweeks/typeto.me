@@ -12640,6 +12640,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-redux", "npm:7.1.18"],
             ["@typescript-eslint/eslint-plugin", "virtual:ef0448e6d40e09e07d8a6ec85a9a4da1eef0c10ef726aba1425a54da05eea10a459e7935f77af49cba629e8afa08db00b57ba979669ae3090187a87d468c369a#npm:4.31.2"],
             ["@typescript-eslint/parser", "virtual:ef0448e6d40e09e07d8a6ec85a9a4da1eef0c10ef726aba1425a54da05eea10a459e7935f77af49cba629e8afa08db00b57ba979669ae3090187a87d468c369a#npm:4.31.2"],
+            ["@typeto.me/backend", "workspace:backend"],
             ["babel-eslint", "virtual:460c37343c57864932af2686306c54678a4e73ba51ea27d70fc0372ac7f8c272e0ab731ac87b00998f35b6bb635b998752ad164bfcfb3838c328b0552edfbc09#npm:10.1.0"],
             ["babel-loader", "virtual:460c37343c57864932af2686306c54678a4e73ba51ea27d70fc0372ac7f8c272e0ab731ac87b00998f35b6bb635b998752ad164bfcfb3838c328b0552edfbc09#npm:8.2.2"],
             ["babel-plugin-named-asset-import", "virtual:dfb2aeacd3f3555029aee20f6baf2c8f337aa8fa372ee11bdfe1bdcf11c15776089d846a624ceb28d9cad459d419715eb30583ee2062ab936c4cc4d384d295f6#npm:0.3.7"],

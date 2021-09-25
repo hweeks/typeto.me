@@ -12,7 +12,7 @@ const all_reducers = combineReducers({ socket:socket_reducer });
 export const store = configureStore({
   reducer: all_reducers,
   middleware: (getDefMiddle) =>
-    getDefMiddle().concat(thunkMiddleware.withExtraArgument()),
+    getDefMiddle().concat(thunkMiddleware),
 });
 
 // eslint-disable-next-line no-undef

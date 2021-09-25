@@ -3442,7 +3442,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typeto.me/backend@workspace:backend":
+"@typeto.me/backend@workspace:*, @typeto.me/backend@workspace:backend":
   version: 0.0.0-use.local
   resolution: "@typeto.me/backend@workspace:backend"
   dependencies:
@@ -3526,6 +3526,7 @@ __metadata:
     "@types/react-redux": 7.1.18
     "@typescript-eslint/eslint-plugin": 4.31.2
     "@typescript-eslint/parser": 4.31.2
+    "@typeto.me/backend": "workspace:*"
     babel-eslint: 10.1.0
     babel-loader: 8.2.2
     babel-plugin-named-asset-import: 0.3.7
